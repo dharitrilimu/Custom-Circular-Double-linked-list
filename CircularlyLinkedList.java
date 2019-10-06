@@ -170,10 +170,10 @@ public void game(CircularlyLinkedList list)
 	
 public static void main(String[] args) {
 	CircularlyLinkedList list=new CircularlyLinkedList();
-	list.add("Harry", 0);
-	list.add("Ron", 0);
-	list.add("Hermione", 0);
-	list.add("Luna", 0);
+	list.add("Eric", 0);
+	list.add("Riya", 0);
+	list.add("Fayden", 0);
+	list.add("Mark", 0);
 	list.game(list);
 	
 }
