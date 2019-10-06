@@ -122,14 +122,17 @@ public void game(CircularlyLinkedList list)
 		int diceroll2=sc.nextInt();
 		System.out.println("roll dice3");		
 		int diceroll3=sc.nextInt();
-				
+		int total=0;	
 			if(diceroll1==1&& diceroll2==1&& diceroll3==1){
 				System.out.println(current.name+" rolled snake eyes(three 1's) and has been eliminated :(");
 				list.remove(current);
 				
 			}
+			else if(diceroll1==6&& diceroll2==6&& diceroll3==6) {
+				total=0;
+			}
 			else {
-				int total=0;
+				
 				total=diceroll1+diceroll2+diceroll3;
 				
 				if(total==9) {
@@ -142,7 +145,7 @@ public void game(CircularlyLinkedList list)
 				current.score=current.score+total;
 				System.out.println(current.name+" rolled "+current.score+", score is now "+current.score);
 			}
-			if(current.score>=150) {
+			if(current.score>=200) {
 				System.out.println("Flag changed");
 				flag=1;
 			}else {
